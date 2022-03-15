@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de formulário</h1>
+    </header>
+    <main>
+        <form>
+            <div id="name">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Nome" required><br>
+            </div>
+
+            <div id="date">
+                <label for="birth">Nascimento:</label>
+                <input type="date" placeholder="00/00/0000">
+                <label for="CPF">CPF:</label>
+                <input type="text" placeholder="000.000.000-00" name="CPF" id="cpf" data-mask="000.000.000-00" maxlength="11" minlength="11" autocomplete="off"><br>
+            </div>
+
+
+            <div id="tel">
+                <label for="tel">Contato</label>
+                <select name="ddd">
+                    <option value="ddd">-</option>
+                    <option value="ddd">79</option>
+                </select>
+                <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}" maxlength="10"
+       required>
+            </div>
+
+            <div id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Digite seu email"><br>
+            </div>
+
+            <div id="gender">
+                <label for="sexo">Sexo</label>
+                <input type="radio" id="male" name="sexo" value="masculino">
+                <label for="male">Masculino</label>
+                 <input type="radio" id="female" name="sexo" value="feminino">
+                <label for="female">Feminino</label><br>
+            </div>
+            
+            <div id="job">
+                <label for="ocupation">Ocupação</label>
+                <select name="job">
+                    <option value="default">-</option>
+                    <option value="vagal">Vagabundo</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="labor">Trabalhador</option>
+                </select>
+            </div>
+
+            <div>
+
+            </div>
+
+            <div id="terms">
+                <label for="terms">Declaro que li e não tô nem aí</label>
+                <input type="checkbox">
+            </div>
+
+            <input type="submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>
