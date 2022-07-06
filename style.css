@@ -1,53 +1,82 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 
-h1{
-    text-align: center;
-}
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+	}
 
-main{
-    position: relative;
-    width: 50vw;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 25px;
-    background-color: gray;
-}
+	body{
+		font-family: sans-serif;
+	}
 
-form{
-    display: inline-block;
-    margin: 5%;
-}
+	h1{
+		text-align: center;
+	}
 
-div{
-    margin: 10px 0;
-}
 
-#name>input{
-    width: 30vw;
-}
+	table{
+		text-align: center;
+		border-collapse: collapse;
+		vertical-align: middle;
+	}
 
-div > input{
-    border-radius: 3px;
-    border: 0 solid rgba(128, 128, 128, 0);
-}
+	#cabeca{
+		font-size: 12px;
+	}
 
-input:target{
-    border: 0 solid gray;
-}
-#date>input{
-    max-width: 5vw;
-}
+	td{
+		font-weight: light;
+		font-size: 12px;
+		padding: 5px;
+		border: 1px solid black;
+	}
 
-#cpf>input{
-    width: 20vw;
-}
+	th{
 
-#submit{
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-}
+		padding: 5px;
+		border: 1px solid black;
+		color: white;
+		background-color: black;
+	}
 
+	.nova{
+		background-color: rgba(129, 238, 183, 0.644);
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	#ole{
+		background-color: red;
+		border-radius: 5px;
+	}
+
+	#c6{
+		border-radius: 5px;
+	}
+
+	#pan{
+		background-color: aqua;
+		border-radius: 5px;
+	}
+
+	#paulista{
+		background: rgb(2, 2, 82);
+		border-radius: 5px;
+	}
+
+	.container{
+		position: absolute;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	}
+
+</style>
