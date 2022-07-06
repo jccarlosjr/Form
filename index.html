@@ -1,76 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exemplo de formulário</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Senhas</title>
 </head>
+
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+	}
+
+	body{
+		font-family: sans-serif;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+
+	table{
+		text-align: center;
+		border-collapse: collapse;
+		vertical-align: middle;
+	}
+
+	#cabeca{
+		font-size: 12px;
+	}
+
+	td{
+		font-weight: light;
+		font-size: 12px;
+		padding: 5px;
+		border: 1px solid black;
+	}
+
+	th{
+
+		padding: 5px;
+		border: 1px solid black;
+		color: white;
+		background-color: black;
+	}
+
+	.nova{
+		background-color: rgba(129, 238, 183, 0.644);
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	#ole{
+		background-color: red;
+		border-radius: 5px;
+	}
+
+	#c6{
+		border-radius: 5px;
+	}
+
+	#pan{
+		background-color: aqua;
+		border-radius: 5px;
+	}
+
+	#paulista{
+		background: rgb(2, 2, 82);
+		border-radius: 5px;
+	}
+
+	.container{
+		position: absolute;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	}
+
+</style>
 <body>
-    <header>
-        <h1>Exemplo de formulário</h1>
-    </header>
-    <main>
-        <form>
-            <div id="name">
-                <label for="nome">Nome:</label>
-                <input type="text" placeholder="Nome" required><br>
-            </div>
+<div class="container">
+	<table>
 
-            <div id="date">
-                <label for="birth">Nascimento:</label>
-                <input type="date" placeholder="00/00/0000">
-                <label for="CPF">CPF:</label>
-                <input type="text" placeholder="000.000.000-00" name="CPF" id="cpf" data-mask="000.000.000-00" maxlength="11" minlength="11" autocomplete="off"><br>
-            </div>
+		<tr id="cabeca">
+			<th>Banco</th>
+			<th>Usuário</th>
+			<th>Senha</th>
+			<th>Promotora</th>
+		</tr>
 
 
-            <div id="tel">
-                <label for="tel">Contato</label>
-                <select name="ddd">
-                    <option value="ddd">-</option>
-                    <option value="ddd">79</option>
-                </select>
-                <input type="tel" id="phone" name="phone"
-       pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}" maxlength="10"
-       required>
-            </div>
+		<tr id="Banrisul">
+			<td><a href="https://bemweb.bempromotora.com.br/autenticacao/login" target="_blank"><img src="https://bemweb.bempromotora.com.br/static/media/bem-logo.aadb742f.svg" width="20px" alt=""></a></td>
+			<td>6172VANE25</td>
+			<td>Senha@20</td>
+			<td>Cia</td>
+		</tr>
+		<tr>
+			<td><a href="https://bemweb.bempromotora.com.br/autenticacao/login" target="_blank"><img src="https://bemweb.bempromotora.com.br/static/media/bem-logo.aadb742f.svg" width="20px" alt=""></a></td>
+			<td>6910EVERAL</td>
+			<td>Banrisul@22</td>
+			<td>Fontes</td>
+		</tr>
 
-            <div id="email">
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Digite seu email"><br>
-            </div>
+		<tr>
+			<td><a href="https://www47.bb.com.br/maisbb/gcs/statics/login/login.bb#/j" target="_blank"><img src="https://www.bb.com.br/pbb/pagina-inicial/cooperativas/cooperativas-urbana/servicos/img.ImgWriter?codigo=59747&origem=CCI&v=202205241" width="20px" alt=""></a></td>
+			<td>JF504515</td>
+			<td>Chesjr20</td>
+			<td>Bevi</td>
+		</tr>
 
-            <div id="gender">
-                <label for="sexo">Sexo</label>
-                <input type="radio" id="male" name="sexo" value="masculino">
-                <label for="male">Masculino</label>
-                 <input type="radio" id="female" name="sexo" value="feminino">
-                <label for="female">Feminino</label><br>
-            </div>
-            
-            <div id="job">
-                <label for="ocupation">Ocupação</label>
-                <select name="job">
-                    <option value="default">-</option>
-                    <option value="vagal">Vagabundo</option>
-                    <option value="estudante">Estudante</option>
-                    <option value="labor">Trabalhador</option>
-                </select>
-            </div>
+		<tr id="Bradesco">
+			<td><a href="https://www.bradescopromotoranet.com.br" target="_blank"><img src="https://www.bradescopromotoranet.com.br/App_Themes/NetForce/Imagens/logoBp.png" width="90px" alt=""></a></td>
+			<td>EVERALDINO@VALORPROMOTORA</td>
+			<td>Chesjr@313</td>
+			<td>Valor</td>
+		</tr>
 
-            <div>
+		<tr id="BMG">
+			<td><a href="https://www.bmgconsig.com.br" target="_blank"><img src="https://www.bmgconsig.com.br/open/img/logo-bmg-nova.png" width="35px" alt=""></a></td>
+			<td>FONTES.5676KL</td>
+			<td>Senha@20</td>
+			<td>Fontes</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.bmgconsig.com.br" target="_blank"><img src="https://www.bmgconsig.com.br/open/img/logo-bmg-nova.png" width="35px" alt=""></a></td>
+			<td>TC54317.KLARIANE</td>
+			<td>Klari+22</td>
+			<td>Tudo Cred</td>
+		</tr>
+		<tr id="BMG">
+			<td><a href="https://www.bmgconsig.com.br" target="_blank"><img src="https://www.bmgconsig.com.br/open/img/logo-bmg-nova.png" width="35px" alt=""></a></td>
+			<td>TC51041.klariane</td>
+			<td>Senha@30</td>
+			<td>Tudo Cred</td>
+		</tr>
 
-            </div>
+		<tr>
+			<td><a href="https://c6.c6consig.com.br/WebAutorizador/Login/AC.UI.LOGIN.aspx?FISession=65a215565050" target="_blank"><img src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2019/08/38835559_902892563234964_3959502548859092992_n.jpg" width="45px" alt="" id="c6"></a></td>
+			<td>04907321511_000424</td>
+			<td>Senha@20</td>
+			<td>Fontes</td>
+		</tr>
 
-            <div id="terms">
-                <label for="terms">Declaro que li e não tô nem aí</label>
-                <input type="checkbox">
-            </div>
+		<tr>
+			<td><a href="https://c6.c6consig.com.br/WebAutorizador/Login/AC.UI.LOGIN.aspx?FISession=65a215565050" target="_blank"><img src="https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2019/08/38835559_902892563234964_3959502548859092992_n.jpg" width="45px" alt="" id="c6"></a></td>
+			<td>03100419537_000006</td>
+			<td>Senha@44</td>
+			<td>Bevi</td>
+		</tr>
 
-            <input type="submit" id="submit">
-        </form>
-    </main>
+		<tr class="nova" id="DAYCOVAL">
+			<td><a href="https://consignado.daycoval.com.br/Autorizador/Login/AC.UI.LOGIN.aspx" target="_blank"><img src="https://consignado.daycoval.com.br/Autorizador/App_Themes/DAYCOVAL2/logo.gif" width="90px" alt="" id="c6"></a></td>
+			<td>DCE-FONTES2242</td>
+			<td>Senha@22</td>
+			<td>Fontes</td>
+		</tr>
+
+		<tr id="IB">
+			<td><a href="https://www.ibconsigweb.com.br/principal/fsconsignataria.jsp" target="_blank"><img src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" alt="" width="20px"></a></td>
+			<td>DK45904.CHESCRED3</td>
+			<td>Senha@22</td>
+			<td>DK</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.ibconsigweb.com.br/principal/fsconsignataria.jsp" target="_blank"><img src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" alt="" width="20px"></a></td>
+			<td>DK45904.CHESCRED4</td>
+			<td>Senha@22</td>
+			<td>DK</td>
+		</tr>
+
+		<tr id="IC">
+			<td><a href="https://portal.icconsig.com.br" target="_blank"><img src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" alt="" width="20px"></a></td>
+			<td>04564636588@46909</td>
+			<td>Senha@21</td>
+			<td>Fontes</td>
+		</tr>
+		<tr>
+			<td><a href="https://portal.icconsig.com.br" target="_blank"><img src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png" alt="" width="20px"></a></td>
+			<td>04015946537@45904</td>
+			<td>Senha@20</td>
+			<td>DK</td>
+		</tr>
+
+		<tr id="OLE">
+			<td><a href="https://ola.oleconsignado.com.br/Home" target="_blank"><img id="ole" src="https://ola.oleconsignado.com.br/lib/ivory/img/logo-branco.png" width="25px" alt=""></a></td>
+			<td>DKLUCIANOCRED</td>
+			<td>Chesneto@30</td>
+			<td>DK</td>
+		</tr>
+
+		<tr id="PAN">
+			<td><a href="https://panconsig.pansolucoes.com.br/WebAutorizador/Login/AC.UI.LOGIN.aspx" target="_blank"><img src="https://assine-operador.bancopan.com.br/assets/image/loader.gif" width="20px" id="pan" alt=""></a></td>
+			<td>066.092.155-37</td>
+			<td>Senha@50</td>
+			<td>Bevi</td>
+		</tr>
+		<tr>
+			<td><a href="https://panconsig.pansolucoes.com.br/WebAutorizador/Login/AC.UI.LOGIN.aspx" target="_blank"><img src="https://assine-operador.bancopan.com.br/assets/image/loader.gif" width="20px" id="pan" alt=""></a></td>
+			<td>066.092.155-37</td>
+			<td>Senha@21</td>
+			<td>Fontes</td>
+		</tr>
+		<tr>
+			<td><a href="https://panconsig.pansolucoes.com.br/WebAutorizador/Login/AC.UI.LOGIN.aspx" target="_blank"><img src="https://assine-operador.bancopan.com.br/assets/image/loader.gif" width="20px" id="pan" alt=""></a></td>
+			<td>041.091.925-01</td>
+			<td>Senha@21</td>
+			<td>Fontes</td>
+		</tr>		
+
+
+		<tr id="PAULISTA">
+			<td><a href="https://consignado.bancopaulista.com.br/WebAutorizador/?FISession=95a5e2c37a1" target="_blank"><img src="https://consignado.bancopaulista.com.br/WebAutorizador/App_Themes/PAULISTA2/logo.gif" width="90px" id="paulista" alt=""></a></td>
+			<td>01067744509_896338</td>
+			<td>Senha@20</td>
+			<td>Tudo Cred</td>
+		</tr>
+		<tr>
+			<td><a href="https://creditmanager.bancopaulista.com.br/Default.aspx" target="_blank"><img src="https://consignado.bancopaulista.com.br/WebAutorizador/App_Themes/PAULISTA2/logo.gif" width="90px" id="paulista" alt=""></a></td>
+			<td>0106774450_8963</td>
+			<td>Senha@20</td>
+			<td>FGTS</td>
+		</tr>
+
+		<tr class="nova" id="SAFRA">
+			<td><a href="https://epfweb.safra.com.br/PainelControle" target="_blank"><img src="https://www.safra.com.br/lumis-theme/br/com/bancosafra/safranet/theme/safranet/assets/img/logo-safra.svg" width="80px" alt=""></a></td>
+			<td>CBSU208958</td>
+			<td>Senha@22</td>
+			<td>-</td>
+		</tr>
+
+		<tr>
+			<td><a href="https://epfweb.safra.com.br/PainelControle" target="_blank"><img src="https://www.safra.com.br/lumis-theme/br/com/bancosafra/safranet/theme/safranet/assets/img/logo-safra.svg" width="80px" alt=""></a></td>
+			<td>CBS149948</td>
+			<td>Senha@20</td>
+			<td>Master</td>
+		</tr>
+
+		<tr>
+			<td><a href="https://www.portalseguro.srv.br/Login.aspx?ReturnUrl=%2f" target="_blank"><img src="https://www.sabemi.com.br/Content/img/logo-header.png" width="80px" alt=""></a></td>
+			<td>SD</td>
+			<td>Senha@2022</td>
+			<td>Master</td>
+		</tr>
+
+		<tr id="SAFRA">
+			<td><a href="https://www.portalseguro.srv.br/Login.aspx?ReturnUrl=%2f" target="_blank"><img src="https://www.sabemi.com.br/Content/img/logo-header.png" width="80px" alt=""></a></td>
+			<td>SD.15178</td>
+			<td>Senha@2222</td>
+			<td>-</td>
+		</tr>
+	</table>
+</div>
 </body>
 </html>
